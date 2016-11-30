@@ -26,8 +26,15 @@
             </center>
         </p>
         
-        <center><select id = "teamO" onchange = "offenseSelected()"></select></center>
-        <center><select id = "teamD" onchange = "defenseSelected()"></select></center>
+        <center>Team 1: <select id = "teamO" onchange = "offenseSelected()" class = "dropDown"></select></center>
+        <center>Team 2: <select id = "teamD" onchange = "defenseSelected()" class = "dropDown"></select></center>
+        <center>
+            Enter bet: <input type = "text" id = "betAmount" class = "inputAmount">
+            <form action = "">
+                <input type = "radio" name = "betOn" value = "o" onchange = "findBet(this.value)">Team 1
+                <input type = "radio" name = "betOn" value = "d" onchange = "findBet(this.value)">Team 2
+            </form>
+        </center>
         
         <div id = "description">
             <p>
