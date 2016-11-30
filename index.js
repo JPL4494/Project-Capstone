@@ -7,9 +7,10 @@ var svgD = d3.select("body").append("svg")
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
 var svgO = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom + 100)
+    .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + (margin.top - 260) + ")");
 
@@ -18,6 +19,7 @@ var div = d3.select("body").append("div")
     .style("opacity", 0);
 
 var nest, ball, year;
+var oIndex, dIndex, bet, payout;
 var rT, rG, oC, lG, lT, wr1, wr2, wr3, wr4, rb, qb;
 var dl1, dl2, dl3, dl4, ml1, ml2, cb1, cb2, cb3, cb4, fs;
 
@@ -42,6 +44,10 @@ function parseData()
 {
     clearScreenO();
     clearScreenD();
+    
+    oIndex = -1;
+    dIndex = -1;
+    payout = 1;
     
     var yearFile = year + ".csv";
  
@@ -70,6 +76,7 @@ function offenseSelected()
         clearScreenO();
 
         var selectedValue = document.getElementById("teamO");
+        oIndex = selectedValue.selectedIndex;
         
         var oLogo = svgO.append("image")
                     .attr("class", "image")
@@ -351,7 +358,20 @@ function offenseSelected()
                         rb.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
                         .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
             
+                        ball = svgO.append("ellipse")
+                            .attr("cx", 710)
+                            .attr("cy", 500)
+                            .attr("rx", 25)
+                            .attr("ry", 15)
+                            .attr("fill", "brown");
+            
                         rb.transition()
+                            .duration(500)
+                            .delay(200)
+                            .attr("cx", 650)
+                            .attr("cy", 300);
+            
+                        ball.transition()
                             .duration(500)
                             .delay(200)
                             .attr("cx", 650)
@@ -369,6 +389,8 @@ function offenseSelected()
                             .delay(100)
                             .attr("cx", 710)
                             .attr("cy", 500);
+            
+                        ball.remove();
                     });
         wr1 = svgO.selectAll("wrcircle")
                     .data(nest)
@@ -557,6 +579,7 @@ function defenseSelected()
         clearScreenD();
 
         var selectedValue = document.getElementById("teamD");
+        dIndex = selectedValue.selectedIndex;
         
         var dLogo = svgD.append("image")
             .attr("class", "image")
@@ -600,7 +623,7 @@ function defenseSelected()
                         .style("top", (d3.event.pageY - 28) + "px");
             
                         dl1.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; });
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -608,7 +631,7 @@ function defenseSelected()
                             .style("opacity", 0);
             
                         dl1.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
                     });
         dl2 = svgD.selectAll("dcircle")
                     .data(nest)
@@ -911,3 +934,41 @@ function defenseSelected()
                         .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
                     });
     }
+
+function findBet(value)
+{
+    var teamA, teamB;
+    
+    if(value == "o")
+    {
+        teamA = oIndex;
+        teamB = dIndex;
+    }
+    else if(value == "d")
+    {
+        teamA = dIndex;
+        teamB = oIndex;
+    }
+    
+    bet = document.getElementById("betAmount").value;
+    
+    /*Comparing the same data from each team*/
+    payout = nest[teamA].values[0].passing / nest[teamB].values[0].passing;
+    payout *= nest[teamA].values[0].rushing / nest[teamB].values[0].rushing;
+    payout *= nest[teamA].values[0].points / nest[teamB].values[0].points;
+    payout *= nest[teamA].values[0].ints / nest[teamB].values[0].ints;
+    payout *= nest[teamA].values[0].sacks / nest[teamB].values[0].sacks;
+    payout *= nest[teamA].values[0].fumbles / nest[teamB].values[0].fumbles;
+    
+    /*Comparing the offense against the defense*/
+    payout *= Math.sqrt(nest[teamA].values[0].passing) / (2 * nest[teamB].values[0].ints);
+    payout *= Math.sqrt(nest[teamA].values[0].rushing) / (3 * nest[teamB].values[0].fumbles);
+    payout *= Math.sqrt(nest[teamA].values[0].points) / (2 * nest[teamB].values[0].sacks);
+    payout *= Math.sqrt(nest[teamB].values[0].passing) / (2 * nest[teamA].values[0].ints);
+    payout *= Math.sqrt(nest[teamB].values[0].rushing) / (3 * nest[teamA].values[0].fumbles);
+    payout *= Math.sqrt(nest[teamB].values[0].points) / (2 * nest[teamA].values[0].sacks);
+    
+    bet *= payout;
+    
+    console.log(bet);
+}
