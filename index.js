@@ -5,6 +5,7 @@ var margin = {top: 10, right: 120, bottom: 25, left: 80},
 var svgD = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
+    .attr("z-index", 1)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
