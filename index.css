@@ -50,3 +50,10 @@ div
     width: 600px !important;
     font-size: 15px;
 }
+
+.sources 
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
