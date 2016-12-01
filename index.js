@@ -20,6 +20,7 @@ var div = d3.select("body").append("div")
 
 var nest, ball, year;
 var oIndex, dIndex, bet, payout;
+var teamA, teamB;
 var rT, rG, oC, lG, lT, wr1, wr2, wr3, wr4, rb, qb;
 var dl1, dl2, dl3, dl4, ml1, ml2, cb1, cb2, cb3, cb4, fs;
 
@@ -617,7 +618,7 @@ function defenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Defensive Lineman</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Sacks: " + 
+                        div.html("<strong>Defensive Lineman</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Sacks: " + 
                                   nest[selectedValue.selectedIndex].values[0].sacks + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -936,9 +937,7 @@ function defenseSelected()
     }
 
 function findBet(value)
-{
-    var teamA, teamB;
-    
+{   
     if(value == "o")
     {
         teamA = oIndex;
@@ -971,4 +970,15 @@ function findBet(value)
     bet *= payout / 6.5;
     
     console.log(bet);
+	
+    displayResults();
+}
+
+function displayResults()
+{
+	var oldBet = document.getElementById("betAmount").value;
+	if(bet > (oldBet * 1.1) || bet < (oldBet * 1.1)
+		document.getElementById("results").value = "Your team, the " + nest[teamA].values[0].team + ", will give you a payout of" + bet;
+	else
+		document.getElementById("results").value = "The teams are similiarly matched and it will end up close";
 }
