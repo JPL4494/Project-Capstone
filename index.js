@@ -954,21 +954,21 @@ function findBet(value)
     
     /*Comparing the same data from each team*/
     payout = nest[teamA].values[0].passing / nest[teamB].values[0].passing;
-    payout *= nest[teamA].values[0].rushing / nest[teamB].values[0].rushing;
-    payout *= nest[teamA].values[0].points / nest[teamB].values[0].points;
-    payout *= nest[teamA].values[0].ints / nest[teamB].values[0].ints;
-    payout *= nest[teamA].values[0].sacks / nest[teamB].values[0].sacks;
-    payout *= nest[teamA].values[0].fumbles / nest[teamB].values[0].fumbles;
+    payout += nest[teamA].values[0].rushing / nest[teamB].values[0].rushing;
+    payout += nest[teamA].values[0].points / nest[teamB].values[0].points;
+    payout += nest[teamA].values[0].ints / nest[teamB].values[0].ints;
+    payout += nest[teamA].values[0].sacks / nest[teamB].values[0].sacks;
+    payout += nest[teamA].values[0].fumbles / nest[teamB].values[0].fumbles;
     
-    /*Comparing the offense against the defense*/
+    /*Comparing the offense against the defense
     payout *= Math.sqrt(nest[teamA].values[0].passing) / (2 * nest[teamB].values[0].ints);
     payout *= Math.sqrt(nest[teamA].values[0].rushing) / (3 * nest[teamB].values[0].fumbles);
     payout *= Math.sqrt(nest[teamA].values[0].points) / (2 * nest[teamB].values[0].sacks);
     payout *= Math.sqrt(nest[teamB].values[0].passing) / (2 * nest[teamA].values[0].ints);
     payout *= Math.sqrt(nest[teamB].values[0].rushing) / (3 * nest[teamA].values[0].fumbles);
-    payout *= Math.sqrt(nest[teamB].values[0].points) / (2 * nest[teamA].values[0].sacks);
+    payout *= Math.sqrt(nest[teamB].values[0].points) / (2 * nest[teamA].values[0].sacks);*/
     
-    bet *= payout;
+    bet *= payout / 6.5;
     
     console.log(bet);
 }
