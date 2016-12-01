@@ -977,12 +977,11 @@ function findBet(value)
 function displayResults()
 {
 	var oldBet = document.getElementById("betAmount").value;
-	var fromatBet = d3.format(".2f");
 
 	if(bet > (oldBet * 1.1) || bet < (oldBet * 0.9))
 	{
 		document.getElementById("results").value = "Your team, the " + nest[teamA].values[0].team + ", will give you a payout of "
-			+ formatBet(bet);
+			+ d3.round(bet, 2);
 	}
 	else
 		document.getElementById("results").value = "The teams are similiarly matched and it will end up close";
