@@ -101,6 +101,7 @@ function offenseSelected()
                     .style("font-family", "verdana")
                     .style("font-size", "90px")
                     .style("stroke-width", 5)
+		    .attr("opacity", 0.5)
                     .text(function () {return selectedValue.options[selectedValue.selectedIndex].text; });
 
         lT = svgO.selectAll("ocircle")
@@ -605,6 +606,7 @@ function defenseSelected()
                     .style("font-family", "verdana")
                     .style("font-size", "90px")
                     .style("stroke-width", 5)
+		    .attr("opacity", 0.5)
                     .text(function () {return selectedValue.options[selectedValue.selectedIndex].text; });
 
         dl1 = svgD.selectAll("dcircle")
