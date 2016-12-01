@@ -980,7 +980,7 @@ function displayResults()
 	if(bet > (oldBet * 1.1) || bet < (oldBet * 0.9))
 	{
 		document.getElementById("results").value = "Your team, the " + nest[teamA].values[0].team + ", will give you a payout of "
-			d3.format(".2f") + bet;
+			+ d3.format(".2f") bet;
 	}
 	else
 		document.getElementById("results").value = "The teams are similiarly matched and it will end up close";
