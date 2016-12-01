@@ -85,6 +85,7 @@ function offenseSelected()
                     .attr("width", "200")
                     .attr("height", "200")
                     .attr("xlink:href", function() { return selectedValue.options[selectedValue.selectedIndex].text + ".png"; })
+		    .attr("opacity", 0.75)
                     .attr("x", 500)
                     .attr("y", 300);
         
@@ -588,6 +589,7 @@ function defenseSelected()
             .attr("width", "200")
             .attr("height", "200")
             .attr("xlink:href", function() { return selectedValue.options[selectedValue.selectedIndex].text + ".png"; })
+	    .attr("opacity", 0.75)
             .attr("x", 500)
             .attr("y", 80);
         
