@@ -44,3 +44,9 @@ div
 {
     font-size: 15px;
 }
+
+.resultText
+{
+    width: 600px !important;
+    font-size: 15px;
+}
