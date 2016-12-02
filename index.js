@@ -36,7 +36,7 @@ function clearScreenD()
 
 function showValue(newValue)
 {
-	document.getElementById("range").innerHTML = newValue;
+    document.getElementById("range").innerHTML = newValue;
     year = newValue;
     
     parseData();
@@ -101,7 +101,7 @@ function offenseSelected()
                     .style("font-family", "verdana")
                     .style("font-size", "90px")
                     .style("stroke-width", 5)
-		    .attr("opacity", 0.5)
+		    .attr("fill-opacity", 0.5)
                     .text(function () {return selectedValue.options[selectedValue.selectedIndex].text; });
 
         lT = svgO.selectAll("ocircle")
@@ -606,7 +606,7 @@ function defenseSelected()
                     .style("font-family", "verdana")
                     .style("font-size", "90px")
                     .style("stroke-width", 5)
-		    .attr("opacity", 0.5)
+		    .attr("fill-opacity", 0.5)
                     .text(function () {return selectedValue.options[selectedValue.selectedIndex].text; });
 
         dl1 = svgD.selectAll("dcircle")
