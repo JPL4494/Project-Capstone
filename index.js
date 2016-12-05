@@ -335,6 +335,12 @@ function offenseSelected()
                             .duration(1000)
                             .delay(10)
                             .attr("cy", 300);
+		
+			fs.transition()
+                            .duration(1000)
+                            .delay(10)
+			    .attr("cx", 140)
+                            .attr("cy", 150);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -350,6 +356,12 @@ function offenseSelected()
                             .duration(300)
                             .delay(10)
                             .attr("cy", 180);
+		
+			fs.transition()
+                            .duration(1000)
+                            .delay(10)
+			    .attr("cx", 600)
+                            .attr("cy", 100);
                     });
         rb = svgO.selectAll("ocircle")
                     .data(nest)
