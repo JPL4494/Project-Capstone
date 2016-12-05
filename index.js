@@ -51,7 +51,7 @@ function parseData()
     dIndex = -1;
     payout = 1;
     
-    var yearFile = year + ".csv";
+    var yearFile = "CSV/" + year + ".csv";
  
     d3.csv(yearFile, function(error, data)
     {    
