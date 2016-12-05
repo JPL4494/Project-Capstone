@@ -58,7 +58,7 @@ div
     column-count: 3;
 }
 
-p
+.title
 {
     background: white;
     opacity: 0.4;
