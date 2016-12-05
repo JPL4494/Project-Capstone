@@ -27,6 +27,8 @@ div.tooltip
 div
 {
     color: black;
+    background: white;
+    opacity: 0.5;
 }
 
 .slider-width
