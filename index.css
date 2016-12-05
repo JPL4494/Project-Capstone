@@ -57,3 +57,9 @@ div
     -moz-column-count: 3;
     column-count: 3;
 }
+
+p
+{
+    background: white;
+    opacity: 0.4;
+}
