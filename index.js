@@ -548,7 +548,7 @@ function offenseSelected()
 			cb2.transition()
                             .duration(1000)
                             .delay(10)
-                            .attr("cy", 280);
+                            .attr("cy", 210);
 		
 			fs.transition()
                             .duration(1000)
@@ -615,7 +615,7 @@ function offenseSelected()
 			cb3.transition()
                             .duration(1000)
                             .delay(10)
-                            .attr("cy", 280);
+                            .attr("cy", 210);
 		
 			fs.transition()
                             .duration(1000)
