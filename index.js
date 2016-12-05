@@ -453,6 +453,17 @@ function offenseSelected()
                             .delay(10)
                             .attr("cx", 140)
                             .attr("cy", 300);
+		
+			cb1.transition()
+                            .duration(1000)
+                            .delay(10)
+                            .attr("cy", 240);
+		
+			fs.transition()
+                            .duration(1000)
+                            .delay(10)
+			    .attr("cx", 140)
+                            .attr("cy", 150);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -463,6 +474,17 @@ function offenseSelected()
                         .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; });
             
                         ball.remove();
+		
+			cb1.transition()
+                            .duration(300)
+                            .delay(10)
+                            .attr("cy", 180);
+		
+			fs.transition()
+                            .duration(1000)
+                            .delay(10)
+			    .attr("cx", 600)
+                            .attr("cy", 100);
                     });
         wr2 = svgO.selectAll("wrcircle")
                     .data(nest)
