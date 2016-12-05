@@ -27,8 +27,7 @@ div.tooltip
 div
 {
     color: black;
-    background: white;
-    opacity: 0.5;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .slider-width
@@ -62,6 +61,5 @@ div
 
 .title
 {
-    background: white;
-    opacity: 0.4;
+    background: rgba(255, 255, 255, 0.5);
 }
