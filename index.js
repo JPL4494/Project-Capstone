@@ -548,7 +548,7 @@ function offenseSelected()
 			cb2.transition()
                             .duration(1000)
                             .delay(10)
-                            .attr("cy", 180);
+                            .attr("cy", 280);
 		
 			fs.transition()
                             .duration(1000)
@@ -615,7 +615,7 @@ function offenseSelected()
 			cb3.transition()
                             .duration(1000)
                             .delay(10)
-                            .attr("cy", 240);
+                            .attr("cy", 280);
 		
 			fs.transition()
                             .duration(1000)
@@ -700,7 +700,7 @@ function offenseSelected()
             
                         ball.remove();
 		
-			cb1.transition()
+			cb4.transition()
                             .duration(300)
                             .delay(10)
                             .attr("cy", 240);
