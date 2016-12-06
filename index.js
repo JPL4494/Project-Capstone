@@ -119,7 +119,7 @@ function offenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Left Tackle</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
+                        div.html("<strong>Left Tackle</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
                                   nest[selectedValue.selectedIndex].values[0].rushing + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -157,7 +157,7 @@ function offenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Left Guard</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
+                        div.html("<strong>Left Guard</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
                                   nest[selectedValue.selectedIndex].values[0].rushing + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -195,7 +195,7 @@ function offenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Center</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
+                        div.html("<strong>Center</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
                                   nest[selectedValue.selectedIndex].values[0].rushing + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -233,7 +233,7 @@ function offenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Right Guard</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
+                        div.html("<strong>Right Guard</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
                                   nest[selectedValue.selectedIndex].values[0].rushing + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -271,7 +271,7 @@ function offenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Right Tackle</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
+                        div.html("<strong>Right Tackle</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
                                   nest[selectedValue.selectedIndex].values[0].rushing + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -309,7 +309,7 @@ function offenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Quaterback</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + nest[selectedValue.selectedIndex].values[0].rushing +
+                        div.html("<strong>Quaterback</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + nest[selectedValue.selectedIndex].values[0].rushing +
                                   "<br/>Passing Yards: " + nest[selectedValue.selectedIndex].values[0].passing + "<br/>Total Points: " + nest[selectedValue.selectedIndex].values[0].points
                                   + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
@@ -377,7 +377,7 @@ function offenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Running Back</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
+                        div.html("<strong>Running Back</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Rushing Yards: " + 
                                   nest[selectedValue.selectedIndex].values[0].rushing + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -457,7 +457,7 @@ function offenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Wide Reciever</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Passing Yards: " + 
+                        div.html("<strong>Wide Reciever</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Passing Yards: " + 
                                   nest[selectedValue.selectedIndex].values[0].passing + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -524,7 +524,7 @@ function offenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Wide Reciever</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Passing Yards: " +
+                        div.html("<strong>Wide Reciever</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Passing Yards: " +
                                   nest[selectedValue.selectedIndex].values[0].passing + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -591,7 +591,7 @@ function offenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Wide Reciever</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Passing Yards: " + 
+                        div.html("<strong>Wide Reciever</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Passing Yards: " + 
                                   nest[selectedValue.selectedIndex].values[0].passing + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -658,7 +658,7 @@ function offenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Wide Reciever</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Passing Yards: " + 
+                        div.html("<strong>Wide Reciever</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Passing Yards: " + 
                                   nest[selectedValue.selectedIndex].values[0].passing + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -789,7 +789,7 @@ function defenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Defensive Lineman</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Sacks: " + 
+                        div.html("<strong>Defensive Lineman</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Sacks: " + 
                                   nest[selectedValue.selectedIndex].values[0].sacks + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -819,7 +819,7 @@ function defenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Defensive Lineman</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Sacks: " + 
+                        div.html("<strong>Defensive Lineman</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Sacks: " + 
                                   nest[selectedValue.selectedIndex].values[0].sacks + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -849,7 +849,7 @@ function defenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Defensive Lineman</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Sacks: " + 
+                        div.html("<strong>Defensive Lineman</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Sacks: " + 
                                   nest[selectedValue.selectedIndex].values[0].sacks + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -879,7 +879,7 @@ function defenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Linebacker</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Fumbles: " + 
+                        div.html("<strong>Linebacker</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Fumbles: " + 
                                   nest[selectedValue.selectedIndex].values[0].fumbles + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -909,7 +909,7 @@ function defenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Linebacker</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Fumbles: " + 
+                        div.html("<strong>Linebacker</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Fumbles: " + 
                                   nest[selectedValue.selectedIndex].values[0].fumbles + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
@@ -939,13 +939,24 @@ function defenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Conerback</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Interceptions: " + 
+                        div.html("<strong>Conerback</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Interceptions: " + 
                                   nest[selectedValue.selectedIndex].values[0].ints + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
             
                         cb1.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; });
+		
+			cb1.transition()
+                            .duration(1000)
+                            .delay(10)
+                            .attr("cy", 210);
+		
+			fs.transition()
+                            .duration(1000)
+                            .delay(10)
+			    .attr("cx", 140)
+                            .attr("cy", 150);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -953,7 +964,18 @@ function defenseSelected()
                             .style("opacity", 0);
             
                         cb1.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
+		
+			cb4.transition()
+                            .duration(200)
+                            .delay(10)
+                            .attr("cy", 240);
+		
+			fs.transition()
+                            .duration(200)
+                            .delay(10)
+			    .attr("cx", 600)
+                            .attr("cy", 100);
                     });
         cb2 = svgD.selectAll("ccircle")
                     .data(nest)
@@ -969,13 +991,24 @@ function defenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Conerback</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Interceptions: " + 
+                        div.html("<strong>Conerback</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Interceptions: " + 
                                   nest[selectedValue.selectedIndex].values[0].ints + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
             
                         cb2.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; });
+		
+			cb2.transition()
+                            .duration(1000)
+                            .delay(10)
+                            .attr("cy", 210);
+		
+			fs.transition()
+                            .duration(1000)
+                            .delay(10)
+			    .attr("cx", 250)
+                            .attr("cy", 150);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -983,7 +1016,18 @@ function defenseSelected()
                             .style("opacity", 0);
             
                         cb2.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
+		
+			cb4.transition()
+                            .duration(200)
+                            .delay(10)
+                            .attr("cy", 240);
+		
+			fs.transition()
+                            .duration(200)
+                            .delay(10)
+			    .attr("cx", 600)
+                            .attr("cy", 100);
                     });
         cb3 = svgD.selectAll("ccircle")
                     .data(nest)
@@ -999,13 +1043,24 @@ function defenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Conerback</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Interceptions: " + 
+                        div.html("<strong>Conerback</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Interceptions: " + 
                                   nest[selectedValue.selectedIndex].values[0].ints + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
             
                         cb3.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; });
+		
+			cb3.transition()
+                            .duration(1000)
+                            .delay(10)
+                            .attr("cy", 210);
+		
+			fs.transition()
+                            .duration(1000)
+                            .delay(10)
+			    .attr("cx", 1060)
+                            .attr("cy", 150);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -1013,7 +1068,18 @@ function defenseSelected()
                             .style("opacity", 0);
             
                         cb3.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
+		
+			cb3.transition()
+                            .duration(200)
+                            .delay(10)
+                            .attr("cy", 240);
+		
+			fs.transition()
+                            .duration(200)
+                            .delay(10)
+			    .attr("cx", 600)
+                            .attr("cy", 100);
                     });
         cb4 = svgD.selectAll("ccircle")
                     .data(nest)
@@ -1029,13 +1095,24 @@ function defenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Conerback</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Interceptions: " + 
+                        div.html("<strong>Conerback</br>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Interceptions: " + 
                                   nest[selectedValue.selectedIndex].values[0].ints + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
             
                         cb4.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; });
+		
+			cb4.transition()
+                            .duration(1000)
+                            .delay(10)
+                            .attr("cy", 210);
+		
+			fs.transition()
+                            .duration(1000)
+                            .delay(10)
+			    .attr("cx", 950)
+                            .attr("cy", 150);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -1043,7 +1120,18 @@ function defenseSelected()
                             .style("opacity", 0);
             
                         cb4.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
+		
+			cb4.transition()
+                            .duration(200)
+                            .delay(10)
+                            .attr("cy", 240);
+		
+			fs.transition()
+                            .duration(200)
+                            .delay(10)
+			    .attr("cx", 600)
+                            .attr("cy", 100);
                     });
         fs = svgD.selectAll("ccircle")
                     .data(nest)
@@ -1059,13 +1147,24 @@ function defenseSelected()
                         div.transition()
                             .duration(200)
                             .style("opacity", .9);
-                        div	.html("<strong>Free Safety<br/>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Interceptions: " + 
+                        div.html("<strong>Free Safety<br/>" + selectedValue.options[selectedValue.selectedIndex].text + "<br/>Total Interceptions: " + 
                                   nest[selectedValue.selectedIndex].values[0].ints + "</strong>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
             
                         fs.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; });
+		
+			fs.transition()
+                            .duration(600)
+                            .delay(10)
+			    .attr("cx", 400)
+                            .attr("cy", 150);
+		
+			fs.transition()
+                            .duration(600)
+                            .delay(600)
+			    .attr("cx", 800);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -1073,7 +1172,13 @@ function defenseSelected()
                             .style("opacity", 0);
             
                         fs.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
+		
+			fs.transition()
+                            .duration(200)
+                            .delay(10)
+			    .attr("cx", 600)
+                            .attr("cy", 100);
                     });
     }
 
@@ -1100,15 +1205,12 @@ function findBet(value)
     payout += nest[teamA].values[0].sacks / nest[teamB].values[0].sacks;
     payout += nest[teamA].values[0].fumbles / nest[teamB].values[0].fumbles;
     
-    /*Comparing the offense against the defense
-    payout *= Math.sqrt(nest[teamA].values[0].passing) / (2 * nest[teamB].values[0].ints);
-    payout *= Math.sqrt(nest[teamA].values[0].rushing) / (3 * nest[teamB].values[0].fumbles);
-    payout *= Math.sqrt(nest[teamA].values[0].points) / (2 * nest[teamB].values[0].sacks);
-    payout *= Math.sqrt(nest[teamB].values[0].passing) / (2 * nest[teamA].values[0].ints);
-    payout *= Math.sqrt(nest[teamB].values[0].rushing) / (3 * nest[teamA].values[0].fumbles);
-    payout *= Math.sqrt(nest[teamB].values[0].points) / (2 * nest[teamA].values[0].sacks);*/
+    /*Comparing the offense against the defense*/
+    payout += Math.sqrt(nest[teamA].values[0].passing) / (nest[teamB].values[0].sacks);
+    payout += Math.sqrt(nest[teamA].values[0].rushing) / (nest[teamB].values[0].ints + nest[teamB].values[0].fumbles);
+    payout += Math.sqrt(nest[teamA].values[0].points) / (nest[teamB].values[0].ints * nest[teamB].values[0].fumbles);
     
-    bet *= payout / 6.5;
+    bet *= payout / 10.5;
     
     console.log(bet);
 	
@@ -1119,7 +1221,7 @@ function displayResults()
 {
 	var oldBet = document.getElementById("betAmount").value;
 
-	if(bet > (oldBet * 1.1) || bet < (oldBet * 0.9))
+	if(payout > 1.2 || payout < 0.8)
 	{
 		document.getElementById("results").value = "Your team, the " + nest[teamA].values[0].team + ", will give you a payout of "
 			+ d3.round((bet - oldBet), 2);
