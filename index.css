@@ -18,7 +18,7 @@ div.tooltip
     text-align: center;								
     padding: 2px;
     font-style: bold;
-    font-family: 12px Roboto;
+    font-family: 12px 'Roboto', sans-serif;
     background: white;	
     border: 0px;		
     border-radius: 8px;			
