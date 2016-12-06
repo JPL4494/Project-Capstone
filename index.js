@@ -46,6 +46,9 @@ function parseData()
 {
     clearScreenO();
     clearScreenD();
+    o.remove(32);
+    d.remove(32);
+    document.getElementById("results").value = "Enter bet and select team";
     
     oIndex = -1;
     dIndex = -1;
