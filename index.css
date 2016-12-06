@@ -16,9 +16,10 @@ div.tooltip
 {	
     position: absolute;			
     text-align: center;								
-    padding: 2px;				
-    font-family: Futura;
+    padding: 2px;
+    font-style: italic;
     font-size: 12px;
+    font-family: Futura;
     background: white;	
     border: 0px;		
     border-radius: 8px;			
