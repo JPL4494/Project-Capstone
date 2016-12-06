@@ -1228,7 +1228,7 @@ function displayResults()
 {
 	var oldBet = document.getElementById("betAmount").value;
 
-	if(payout > 1.2 || payout < 0.8)
+	if(payout > 1.3 || payout < 0.7)
 	{
 		document.getElementById("results").value = "Your team, the " + nest[teamA].values[0].team + ", will give you a payout of "
 			+ d3.round((bet - oldBet), 2);
