@@ -49,9 +49,11 @@ function parseData()
     var o = document.getElementById("teamO");
     var d = document.getElementById("teamD");
     if(o.length > 0)
-	o.remove(32);
+	for(var i = 0; i < 32; i++)
+	    o.remove(0);
     if(d.length > 0)
-	d.remove(32);
+	for(var i = 0; i < 32; i++)
+	    d.remove(0);
     document.getElementById("results").value = "Enter bet and select team";
     
     oIndex = -1;
