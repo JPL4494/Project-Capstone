@@ -966,7 +966,7 @@ function defenseSelected()
                         cb1.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
                         .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
 		
-			cb4.transition()
+			cb1.transition()
                             .duration(200)
                             .delay(10)
                             .attr("cy", 240);
@@ -1018,7 +1018,7 @@ function defenseSelected()
                         cb2.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
                         .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
 		
-			cb4.transition()
+			cb2.transition()
                             .duration(200)
                             .delay(10)
                             .attr("cy", 240);
