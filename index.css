@@ -17,7 +17,7 @@ div.tooltip
     position: absolute;			
     text-align: center;								
     padding: 2px;
-    font-style: italic;
+    font-style: bold;
     font-size: 12px;
     font-family: Futura;
     background: white;	
