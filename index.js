@@ -976,7 +976,7 @@ function defenseSelected()
 			cb1.transition()
                             .duration(200)
                             .delay(10)
-                            .attr("cy", 240);
+                            .attr("cy", 180);
 		
 			fs.transition()
                             .duration(200)
@@ -1080,7 +1080,7 @@ function defenseSelected()
 			cb3.transition()
                             .duration(200)
                             .delay(10)
-                            .attr("cy", 240);
+                            .attr("cy", 180);
 		
 			fs.transition()
                             .duration(200)
