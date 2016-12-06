@@ -17,7 +17,8 @@ div.tooltip
     position: absolute;			
     text-align: center;								
     padding: 2px;				
-    font-family: 12px Copperplate, "Copperplate Gothic Light", fantasy;	
+    font-family: Copperplate;
+    font-size: 12px;
     background: white;	
     border: 0px;		
     border-radius: 8px;			
