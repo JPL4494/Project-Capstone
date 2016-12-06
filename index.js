@@ -36,7 +36,7 @@ function clearScreenD()
 
 function showValue(newValue)
 {
-    document.getElementById("range").innerHTML = newValue;
+    document.getElementById("range").innerHTML = "<b> " + newValue + " </b>";
     year = newValue;
     
     parseData();
