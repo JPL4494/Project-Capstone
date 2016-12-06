@@ -46,8 +46,12 @@ function parseData()
 {
     clearScreenO();
     clearScreenD();
-    o.remove(32);
-    d.remove(32);
+    var o = document.getElementById("teamO");
+    var d = document.getElementById("teamD");
+    if(o.length > 0)
+	o.remove(32);
+    if(d.length > 0)
+	d.remove(32);
     document.getElementById("results").value = "Enter bet and select team";
     
     oIndex = -1;
@@ -62,8 +66,6 @@ function parseData()
             .key(function(d) { return d.team; })
             .entries(data);
         
-        var o = document.getElementById("teamO");
-        var d = document.getElementById("teamD");
         for(var i = 0; i < 32; i++)
         {
             var optionO = document.createElement("option");
