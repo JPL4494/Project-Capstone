@@ -22,19 +22,19 @@
             <center>
                 Select Year
                 <input type = "range" class = "slider-width" min = "2003" max = "2015" value = "1992" step = "1" onchange = "showValue(this.value)" />
-                <span id = "range">2003</span>
+                <span id = "range"><b>2003</b></span>
             </center>
         </p>
         
-        <center>Team 1: <select id = "teamO" onchange = "offenseSelected()" class = "dropDown"></select></center>
-        <center>Team 2: <select id = "teamD" onchange = "defenseSelected()" class = "dropDown"></select></center>
+        <center><b>Team 1: </b><select id = "teamO" onchange = "offenseSelected()" class = "dropDown"></select></center>
+        <center><b>Team 2: </b><select id = "teamD" onchange = "defenseSelected()" class = "dropDown"></select></center>
         <center>
-            Enter bet: <input type = "text" id = "betAmount" class = "inputAmount">
+            <b>Enter bet: </b><input type = "text" id = "betAmount" class = "inputAmount">
             <form action = "">
                 <input type = "radio" name = "betOn" value = "o" onchange = "findBet(this.value)">Team 1
                 <input type = "radio" name = "betOn" value = "d" onchange = "findBet(this.value)">Team 2
             </form>
-            Result: <input type = "text" class = "resultText" id = "results" value = "select teams and place bet" readonly="readonly" />
+            <b>Result: </b><input type = "text" class = "resultText" id = "results" value = "select teams and place bet" readonly="readonly" />
         </center>
         
         <div id = "description">
