@@ -689,7 +689,7 @@ function offenseSelected()
 			cb4.transition()
                             .duration(1000)
                             .delay(10)
-                            .attr("cy", 240);
+                            .attr("cy", 200);
 		
 			fs.transition()
                             .duration(1000)
