@@ -1014,8 +1014,8 @@ function defenseSelected()
 			fs.transition()
                             .duration(1000)
                             .delay(10)
-			    .attr("cx", 250)
-                            .attr("cy", 150);
+			    .attr("cx", 310)
+                            .attr("cy", 140);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -1113,13 +1113,13 @@ function defenseSelected()
 			cb4.transition()
                             .duration(1000)
                             .delay(10)
-                            .attr("cy", 240);
+                            .attr("cy", 210);
 		
 			fs.transition()
                             .duration(1000)
                             .delay(10)
-			    .attr("cx", 950)
-                            .attr("cy", 150);
+			    .attr("cx", 890)
+                            .attr("cy", 140);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
