@@ -494,7 +494,7 @@ function offenseSelected()
                             .duration(1000)
                             .delay(10)
 			    .attr("cx", 140)
-                            .attr("cy", 150);
+                            .attr("cy", 170);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -561,7 +561,7 @@ function offenseSelected()
                             .duration(1000)
                             .delay(10)
 			    .attr("cx", 250)
-                            .attr("cy", 150);
+                            .attr("cy", 170);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -622,13 +622,13 @@ function offenseSelected()
 			cb3.transition()
                             .duration(1000)
                             .delay(10)
-                            .attr("cy", 210);
+                            .attr("cy", 240);
 		
 			fs.transition()
                             .duration(1000)
                             .delay(10)
 			    .attr("cx", 1060)
-                            .attr("cy", 150);
+                            .attr("cy", 170);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -689,13 +689,13 @@ function offenseSelected()
 			cb4.transition()
                             .duration(1000)
                             .delay(10)
-                            .attr("cy", 210);
+                            .attr("cy", 240);
 		
 			fs.transition()
                             .duration(1000)
                             .delay(10)
 			    .attr("cx", 950)
-                            .attr("cy", 150);
+                            .attr("cy", 170);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -957,7 +957,7 @@ function defenseSelected()
 			cb1.transition()
                             .duration(1000)
                             .delay(10)
-                            .attr("cy", 210);
+                            .attr("cy", 240);
 		
 			fs.transition()
                             .duration(1000)
@@ -1061,7 +1061,7 @@ function defenseSelected()
 			cb3.transition()
                             .duration(1000)
                             .delay(10)
-                            .attr("cy", 210);
+                            .attr("cy", 240);
 		
 			fs.transition()
                             .duration(1000)
