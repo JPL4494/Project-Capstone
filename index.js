@@ -947,8 +947,8 @@ function defenseSelected()
                         ml2.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
                         .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
 		
-			ml1.transition()
-                            .duration(1000)
+			ml2.transition()
+                            .duration(200)
                             .delay(10)
                             .attr("cy", 180);
                     });
