@@ -493,7 +493,7 @@ function offenseSelected()
 			fs.transition()
                             .duration(1000)
                             .delay(10)
-			    .attr("cx", 140)
+			    .attr("cx", 200)
                             .attr("cy", 170);
                     })					
                     .on("mouseout", function(d) {
@@ -555,12 +555,12 @@ function offenseSelected()
 			cb2.transition()
                             .duration(1000)
                             .delay(10)
-                            .attr("cy", 240);
+                            .attr("cy", 180);
 		
 			fs.transition()
                             .duration(1000)
                             .delay(10)
-			    .attr("cx", 250)
+			    .attr("cx", 310)
                             .attr("cy", 170);
                     })					
                     .on("mouseout", function(d) {
@@ -576,7 +576,7 @@ function offenseSelected()
 			cb2.transition()
                             .duration(300)
                             .delay(10)
-                            .attr("cy", 180);
+                            .attr("cy", 240);
 		
 			fs.transition()
                             .duration(300)
@@ -627,8 +627,8 @@ function offenseSelected()
 			fs.transition()
                             .duration(1000)
                             .delay(10)
-			    .attr("cx", 1060)
-                            .attr("cy", 150);
+			    .attr("cx", 1000)
+                            .attr("cy", 170);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -694,7 +694,7 @@ function offenseSelected()
 			fs.transition()
                             .duration(1000)
                             .delay(10)
-			    .attr("cx", 950)
+			    .attr("cx", 890)
                             .attr("cy", 170);
                     })					
                     .on("mouseout", function(d) {
