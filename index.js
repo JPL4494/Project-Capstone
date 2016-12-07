@@ -561,7 +561,7 @@ function offenseSelected()
                             .duration(1000)
                             .delay(10)
 			    .attr("cx", 250)
-                            .attr("cy", 150);
+                            .attr("cy", 170);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -576,7 +576,7 @@ function offenseSelected()
 			cb2.transition()
                             .duration(300)
                             .delay(10)
-                            .attr("cy", 240);
+                            .attr("cy", 180);
 		
 			fs.transition()
                             .duration(300)
