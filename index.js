@@ -892,7 +892,12 @@ function defenseSelected()
                         .style("top", (d3.event.pageY - 28) + "px");
             
                         ml1.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; });
+		
+			ml1.transition()
+                            .duration(1000)
+                            .delay(10)
+                            .attr("cy", 130);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -900,7 +905,12 @@ function defenseSelected()
                             .style("opacity", 0);
             
                         ml1.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
+		
+			ml1.transition()
+                            .duration(200)
+                            .delay(10)
+                            .attr("cy", 180);
                     });
         ml2 = svgD.selectAll("mcircle")
                     .data(nest)
@@ -922,7 +932,12 @@ function defenseSelected()
                         .style("top", (d3.event.pageY - 28) + "px");
             
                         ml2.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color2; });
+			
+			ml2.transition()
+                            .duration(1000)
+                            .delay(10)
+                            .attr("cy", 130);
                     })					
                     .on("mouseout", function(d) {
                         div.transition()
@@ -930,7 +945,12 @@ function defenseSelected()
                             .style("opacity", 0);
             
                         ml2.style("fill", function () { return nest[selectedValue.selectedIndex].values[0].color2; })
-                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; })
+                        .style("stroke", function () { return nest[selectedValue.selectedIndex].values[0].color1; });
+		
+			ml1.transition()
+                            .duration(1000)
+                            .delay(10)
+                            .attr("cy", 180);
                     });
         cb1 = svgD.selectAll("ccircle")
                     .data(nest)
